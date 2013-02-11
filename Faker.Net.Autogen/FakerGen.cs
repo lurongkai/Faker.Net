@@ -25,7 +25,7 @@ namespace Faker.Net.Autogen
         {
             if (String.IsNullOrEmpty(snapshotName))
             {
-                throw new ArgumentNullException("snapshot name can not be null.");
+                throw new ArgumentNullException("snapshotName");
             }
 
             throw new NotImplementedException();
