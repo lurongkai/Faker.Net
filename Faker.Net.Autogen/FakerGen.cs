@@ -9,7 +9,7 @@ namespace Faker.Net.Autogen
     {
         private readonly static Random _random = new Random();
 
-        public static T Generate<T>(string snapshotName = null) {
+        public static T Generate<T>() {
             if (typeof(T) == typeof(int)) {
                 return (T)(object)_random.Next();
             }
@@ -17,17 +17,12 @@ namespace Faker.Net.Autogen
             return default(T);
         }
 
-        public static IEnumerable<T> GenerateList<T>(string snapshotName = null) {
+        public static IEnumerable<T> GenerateList<T>() {
             throw new NotImplementedException();
         }
 
-        public static T RecoverySnapshot<T>(string snapshotName)
+        public static T RecoverySnapshot<T>()
         {
-            if (String.IsNullOrEmpty(snapshotName))
-            {
-                throw new ArgumentNullException("snapshotName");
-            }
-
             throw new NotImplementedException();
         }
     }

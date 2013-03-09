@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net", "Faker.Net\Faker.Net.csproj", "{F4E27022-496C-48E5-8986-F68355C2ECB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net.NUnit.Tests", "Faker.Net.NUnit.Tests\Faker.Net.NUnit.Tests.csproj", "{5535BD16-B1E6-40A9-9ADA-502EE21E14BC}"
@@ -8,6 +8,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net.Autogen", "Faker.Net.Autogen\Faker.Net.Autogen.csproj", "{0DDEB56A-0AB0-4117-8874-81E6CEE1BF9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net.Autogen.Tests", "Faker.Net.Autogen.Tests\Faker.Net.Autogen.Tests.csproj", "{E0B2413A-19C7-471D-BD52-59ED69D93CE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facker.Net", "Facker.Net", "{F7C66909-EBAD-4D52-9008-ED506D55705E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,5 +64,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4E27022-496C-48E5-8986-F68355C2ECB3} = {F7C66909-EBAD-4D52-9008-ED506D55705E}
+		{5535BD16-B1E6-40A9-9ADA-502EE21E14BC} = {F7C66909-EBAD-4D52-9008-ED506D55705E}
 	EndGlobalSection
 EndGlobal
