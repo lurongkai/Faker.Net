@@ -25,5 +25,7 @@ namespace Faker.Net.Autogen
         {
             throw new NotImplementedException();
         }
+
+        public static GenerationSetting Setting { get; private set; }
     }
 }
