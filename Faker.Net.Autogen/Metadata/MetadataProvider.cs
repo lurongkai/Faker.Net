@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Faker.Net.Autogen
+﻿namespace Faker.Net.Autogen.Metadata
 {
-    public class MetadataProvider
+    public class MetadataProvider// : IMetadataProvider
     {
     }
 }

@@ -5,14 +5,16 @@ using System.Text;
 
 namespace Faker.Net.Autogen
 {
-    internal class DefaultInstanceService : IInstanceService
+    internal class DefaultInstanceService : IInstanceResolver
     {
-        public T GetInstance<T>() where T : class {
-            throw new NotImplementedException();
+        public T GetInstance<T>() where T : class
+        {
+            return Activator.CreateInstance<T>();
         }
 
-        public IEnumerable<T> GetInstances<T>() where T : class {
-            throw new NotImplementedException();
+        public IEnumerable<T> GetInstances<T>() where T : class
+        {
+            return Enumerable.Empty<T>();
         }
     }
 }
